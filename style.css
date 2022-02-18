@@ -1,0 +1,343 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --Very-Pale-Cyan: hsl(193, 100%, 96%);
+  --Very-Dark-Cyan: hsl(192, 100%, 9%);
+  --Grayish-Blue: hsl(208, 11%, 55%);
+  --Pink: hsl(322, 100%, 66%);
+  --strong-Pink: hsl(322, 100%, 54%);
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+img {
+  width: 100%;
+}
+p {
+  font-family: "Open Sans", sans-serif;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+header {
+  background: linear-gradient(rgba(0, 0, 0, 0.075), rgba(0, 0, 0, 0.062)),
+    url(images/bg-hero-mobile.svg);
+  padding: 2rem 0 4rem;
+  background-size: cover;
+}
+
+.header--top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+}
+.logo-container {
+  width: 8rem;
+  height: 1rem;
+}
+.header--top a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  border-radius: 20px;
+  padding: 0.3rem 2rem;
+  background-color: white;
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.171);
+  transition: box-shadow 300ms ease-out;
+}
+.header--top a:hover {
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.771);
+}
+
+.header--bottom_text {
+  text-align: center;
+}
+.header--bottom_text h1 {
+  max-width: 400px;
+  margin: 7rem auto 2rem;
+}
+.header--bottom_text p {
+  font-size: 21px;
+  width: 89%;
+  line-height: 1.5;
+  margin: 0 auto;
+}
+.header--bottom_text button {
+  background-color: var(--Pink);
+  border: none;
+  border-radius: 30px;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: inherit;
+  padding: 0.9rem 4rem;
+  margin: 3rem 0 5rem;
+  cursor: pointer;
+  transition: background-color 300ms ease-out;
+}
+.header--bottom_text button:hover {
+  background-color: var(--strong-Pink);
+}
+.header--bottom_img {
+  width: 90%;
+  margin: 2rem auto;
+}
+.grow--together,
+.flowing--conversion,
+.your--users {
+  width: 90%;
+  padding: 1rem;
+  border-radius: 20px;
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.171);
+  transition: box-shadow 300ms ease-out;
+}
+.grow--together {
+  margin: 6rem auto 3rem;
+}
+.flowing--conversion,
+.your--users {
+  margin: 0.5rem auto 3rem;
+}
+.grow--together:hover,
+.flowing--conversion:hover,
+.your--users:hover {
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.771);
+}
+.grow--together_text,
+.flowing--conversion_text,
+.your--users_text {
+  text-align: center;
+  margin: 2rem auto;
+  max-width: 480px;
+}
+.grow--together h2,
+.flowing--conversion h2,
+.your--users h2 {
+  font-weight: 600;
+}
+.grow--together p,
+.flowing--conversion p,
+.your--users p {
+  margin-block: 1rem;
+}
+aside {
+  width: 90%;
+  border-radius: 10px;
+  padding: 3rem 1rem;
+  margin: 0 auto;
+  text-align: center;
+  background-color: white;
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.171);
+  transform: translateY(5rem);
+}
+aside h2 {
+  font-weight: 600;
+}
+aside button {
+  background-color: var(--Pink);
+  border: none;
+  border-radius: 30px;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: inherit;
+  padding: 0.9rem 3rem;
+  margin: 2rem 0 0;
+  cursor: pointer;
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.171);
+  transition: background-color 300ms ease-out;
+}
+aside button:hover {
+  background-color: var(--strong-Pink);
+}
+footer {
+  background-color: var(--Very-Dark-Cyan);
+  padding-block: 10rem 5rem;
+  color: white;
+}
+.footer--first_img {
+  width: 13rem;
+}
+.footer--first_img img {
+  filter: invert(50%);
+}
+.footer--first p {
+  max-width: 430px;
+}
+
+.footer--location p {
+  line-height: 1.5;
+}
+
+.footer--phone a,
+.footer--mail a {
+  text-decoration: none;
+  color: white;
+}
+.footer--location,
+.footer--phone,
+.footer--mail {
+  display: flex;
+  margin: 1rem 0;
+}
+.footer--location span,
+.footer--phone span,
+.footer--mail span {
+  margin-right: 1rem;
+}
+.footer--links {
+  display: flex;
+  flex-direction: column;
+  line-height: 2;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+}
+.footer--links a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  display: inline-flex;
+  width: fit-content;
+}
+.footer--links a:hover {
+  text-decoration: underline;
+}
+.footer--social {
+  display: flex;
+  justify-content: center;
+}
+.footer--social i {
+  display: flex;
+  width: 3rem;
+  height: 3rem;
+  border: 2px solid white;
+  border-radius: 50%;
+  font-size: 28px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-top: 5rem;
+  transition: 300ms ease-in;
+}
+i + i {
+  margin-left: 1rem;
+}
+.footer--social i:hover {
+  color: var(--Pink);
+  border: 2px solid var(--Pink);
+}
+.attribution {
+  font-size: 18px;
+  text-align: center;
+  margin-block: 1rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
+@media (min-width: 650px) {
+  header {
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.075),
+        rgba(0, 0, 0, 0.0062)
+      ),
+      url(images/bg-hero-desktop.svg);
+  }
+  .header--bottom {
+    display: flex;
+    justify-content: space-between;
+  }
+  .header--bottom_text {
+    text-align: left;
+  }
+  .header--bottom_text h1 {
+    margin: 7rem 0 2rem;
+  }
+  .header--bottom_text p {
+    font-size: 18px;
+    max-width: 630px;
+    line-height: 1.5;
+    margin: 0;
+  }
+  .header--bottom_img {
+    width: 70%;
+    margin: 5rem 0 0;
+  }
+  .grow--together,
+  .flowing--conversion,
+  .your--users {
+    padding-block: 3rem;
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .grow--together,
+  .your--users {
+    flex-direction: row-reverse;
+  }
+  .grow--together_text,
+  .flowing--conversion_text,
+  .your--users_text {
+    text-align: left;
+    margin: 2rem 0;
+    width: 45%;
+  }
+  .grow--together_img,
+  .flowing--conversion_img,
+  .your--users_img {
+    width: 50%;
+  }
+  aside {
+    width: 80%;
+  }
+  aside button {
+    padding: 0.9rem 4rem;
+  }
+}
+@media (min-width: 815px) {
+  aside {
+    width: 650px;
+  }
+  .wrapper {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .footer--links {
+    height: 130px;
+    width: 30%;
+  }
+  .footer--links a {
+    margin-left: 2rem;
+  }
+}
+@media (min-width: 1000px) {
+  .header--bottom_img {
+    width: 40%;
+    margin: 5rem 0 0;
+  }
+  .grow--together_img,
+  .flowing--conversion_img,
+  .your--users_img {
+    width: 30%;
+  }
+}
+@media (min-width: 1154px) {
+  .attribution {
+    text-align: right;
+    margin: 0 8rem 0 0;
+  }
+}
